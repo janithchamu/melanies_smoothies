@@ -68,7 +68,7 @@ if ingredients_list:
 if ingredients_list:
     ingredients_string = ''
     for fruits in ingredients_list:
-        ingredients_string+=fruit+" "
+        ingredients_string+=fruits+" "
         search_on=pd_df.loc[pd_df['FRUIT_NAME'] == fruits, 'SEARCH_ON'].iloc[0]
         # st.write('The search value for ', fruits,' is ', search_on, '.')
         st.subheader(fruits+" Nutrition Information")
